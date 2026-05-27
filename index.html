@@ -432,7 +432,7 @@ function onResults(results) {
 
             // リアルタイムの「口すぼめ」判定
             const currentPucker = landmarks[270].x - landmarks[40].x;
-            const isPucker = currentPucker < calibrationData.puckerWidth * 0.82 * hirituX;
+            const isPucker = currentPucker < calibrationData.puckerWidth * 0.82;
 
             // ==========================================
             // 【特別アクション判定】 移動 ＋ 口すぼめ の組み合わせ
